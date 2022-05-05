@@ -1,23 +1,37 @@
 .container{
-
+   background: linear-gradient(rgb(47, 150, 163), rgb(60, 94, 197));
+   margin-top:200px;
+   margin-bottom:200px;
+   margin-left:250px;
+   margin-right:250px;
+   box-sizing: border-box;
+   padding: 0;
+   flex-direction: column;
+   justify-content: center;
+   height: 50vh;
+   width: 60vw;
+   font-family: sans-serif;
+   color: white;
 }
 
-.weather-summary{
+.weather-summary, .precipitation, .humidity{
+   font-size: medium;
 
 }
 
 .temperature{
-
+   font-weight: bold;
+   flex-direction: column;
 }
-
-.precipitation{
-
+.degree-section{
+   display: flex;
+   align-items: center;
+   cursor: pointer;
 }
-
-.humidity{
-   
+.degree-section span{
+   margin: 10px;
+   font-size: 30px;
 }
-
 .wind{
-   
+   font-style: italic;
 }

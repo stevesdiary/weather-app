@@ -4,19 +4,28 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel='stylesheet' href="styles.css">
    <title>Weather</title>
 </head>
 <body>
    <div class="container">
+      <div class="location">
+         <div class="date" id="date"></div>
+      </div>
       <div class="WeatherSummary">
+         <div class="city">
+               <h1>Lagos, Nigeria</h1>
+            </div>
          <div class="temperature">
-            <h2>
-
+            <h2 id="centigrade">
+               23 C
             </h2>
+            <span id="fahrenheit">
+               73.4 F
+            </span>
          </div>
          <div class="precipitation">
             <h2>
-
             </h2>
          </div>
          <div class="humidity">
@@ -33,5 +42,6 @@
 
       </div>
    </div>
+   <script src="app.js"></script>
 </body>
 </html>
