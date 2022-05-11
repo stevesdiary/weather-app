@@ -3,45 +3,30 @@
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="viewport" content="width=device-width, initial-scale=.5">
    <link rel='stylesheet' href="styles.css">
    <title>Weather</title>
 </head>
 <body>
-   <div class="container">
-      <div class="location">
-         <div class="date" id="date"></div>
+   <div class="card">
+      <div class="search" action="/" method="post">
+         <p>You can get the basic weather conditions of your timezone.</p>
+         <input type="text" class="search-bar" name="cityName" placeholder="Enter City here">
+         <button class="btn" type="submit">Get weather</button>
       </div>
-      <div class="WeatherSummary">
-         <div class="city">
-               <h1>Lagos, Nigeria</h1>
-            </div>
+      <div class="weather">
+         <h2 class="city"></h2>
+         <h3 class="country"></h3>
          <div class="temperature">
-            <h2 id="centigrade">
-               23 C
-            </h2>
-            <span id="fahrenheit">
-               73.4 F
-            </span>
+            <h1></h1>
          </div>
-         <div class="precipitation">
-            <h2>
-            </h2>
-         </div>
-         <div class="humidity">
-            <h2>
-
-            </h2>
-         </div>
-         <div class="wind">
-            <h2>
-
-            </h2>
-         </div>
-
-
+         <img src="" alt="" class="icon"/>
+         <div  class="description"></div>
+         <div class="humidity"></div>
+         <div class="temp"></div>
+         <div class="wind"></div>
       </div>
    </div>
-   <script src="app.js"></script>
+   <script src="index.js"></script>
 </body>
 </html>
